@@ -1,0 +1,144 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+description: Component architecture and implementation guidelines
+globs: components/**/*.{ts,tsx}, app/**/components/*.{ts,tsx}
+
+## Component Organization
+
+### Directory Structure
+- Group related components in subdirectories
+- Use feature-based organization for complex components
+- Keep shared components in `components/ui`
+- Place page-specific components in respective route directories
+
+### Naming Conventions
+- Use PascalCase for component files and functions
+- Use kebab-case for directories
+- Suffix test files with `.test.tsx`
+- Use descriptive, semantic names
+
+## Component Architecture
+
+### File Structure
+```tsx
+// Imports
+import { type FC } from 'react'
+import { cn } from '@/lib/utils'
+
+// Types/Interfaces
+interface Props {
+  // Props definition
+}
+
+// Component
+export const ComponentName: FC<Props> = ({ prop1, prop2 }) => {
+  // Implementation
+}
+```
+
+### Props Management
+- Use TypeScript interfaces for props
+- Destructure props in function parameters
+- Provide default values where appropriate
+- Document required vs optional props
+
+## UI Components
+
+### shadcn/ui Usage
+- Place shadcn/ui component variants in `components/ui`
+- Follow shadcn/ui composition patterns
+- Maintain consistent styling API
+- Use `cn()` utility for class merging
+
+### Custom Components
+- Build on top of shadcn/ui primitives
+- Maintain consistent prop patterns
+- Implement proper accessibility features
+- Support dark mode by default
+
+## Animation Components
+
+### Framer Motion Implementation
+- Create reusable animation variants
+- Place shared animations in `lib/animations`
+- Use consistent animation configuration
+- Implement proper exit animations
+
+### Motion Components
+- Create wrapper components for common animations
+- Use proper TypeScript types
+- Handle animation cleanup
+- Consider performance impact
+
+## Component Patterns
+
+### Composition
+- Prefer composition over inheritance
+- Use render props pattern when needed
+- Implement proper component splitting
+- Keep components focused and reusable
+
+### State Management
+- Use hooks for complex state logic
+- Keep state as local as possible
+- Implement proper loading states
+- Handle error states gracefully
+
+## Forms
+
+### Form Components
+- Use react-hook-form for form state
+- Implement proper validation
+- Create reusable form components
+- Handle submission states properly
+
+### Input Components
+- Create consistent input wrapper components
+- Implement proper error handling
+- Support form validation
+- Maintain accessibility standards
+
+## Layout Components
+
+### Structure
+- Create reusable layout components
+- Implement responsive designs
+- Use CSS Grid and Flexbox appropriately
+- Consider content flow and hierarchy
+
+### Patterns
+- Create consistent spacing system
+- Implement proper breakpoints
+- Use semantic HTML elements
+- Support dynamic content
+
+## Testing
+
+### Component Testing
+- Test component rendering
+- Test user interactions
+- Test error states
+- Test accessibility
+
+### Test Organization
+- Group related tests
+- Use meaningful test descriptions
+- Mock external dependencies
+- Test edge cases
+
+## Documentation
+
+### Component Documentation
+- Document component purpose
+- List available props
+- Provide usage examples
+- Note any limitations
+
+### Storybook (if used)
+- Create stories for components
+- Document component variants
+- Show interactive examples
+- Include proper documentation 

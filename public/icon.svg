@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg baseProfile="full" height="240px" version="1.1" viewBox="0 0 240 240" width="240px" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="ThemeGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="1.0" />
+      <stop offset="100%" stop-color="#14b8a6" stop-opacity="1.0" />
+    </linearGradient>
+  </defs>
+  <path d="M 60,200 L 120,20 L 180,200" fill="none" stroke="url(#ThemeGradient)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+  <line stroke="url(#ThemeGradient)" stroke-linecap="round" stroke-width="3" x1="85" x2="155" y1="110" y2="110" />
+  <path d="M 60,200 C 80,160 100,160 120,200 C 140,160 160,160 180,200" fill="none" stroke="url(#ThemeGradient)" stroke-linecap="round" stroke-width="3" />
+  <circle cx="80" cy="160" fill="#10b981" r="4" />
+  <circle cx="100" cy="130" fill="#10b981" r="4" />
+  <circle cx="120" cy="100" fill="#10b981" r="4" />
+  <circle cx="140" cy="80" fill="#10b981" r="4" />
+  <circle cx="160" cy="60" fill="#10b981" r="4" />
+  <line stroke="#10b981" stroke-linecap="round" stroke-width="2" x1="80" x2="100" y1="160" y2="130" />
+  <line stroke="#10b981" stroke-linecap="round" stroke-width="2" x1="100" x2="120" y1="130" y2="100" />
+  <line stroke="#10b981" stroke-linecap="round" stroke-width="2" x1="120" x2="140" y1="100" y2="80" />
+  <line stroke="#10b981" stroke-linecap="round" stroke-width="2" x1="140" x2="160" y1="80" y2="60" />
+  <polygon fill="url(#ThemeGradient)" fill-opacity="0.3" points="110,60 130,60 160,120 120,180 80,120" stroke="none" />
+</svg>

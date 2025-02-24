@@ -1,0 +1,114 @@
+---
+description: Core project standards and configurations for Next.js app with shadcn/ui
+globs: app/**/*.{ts,tsx,js,jsx}, components/**/*.{ts,tsx,js,jsx}, lib/**/*.{ts,tsx,js,jsx}
+alwaysApply: true
+---
+
+## Project Structure
+
+### App Router Organization
+- Follow Next.js 13+ app router conventions
+- Use the `app` directory for all routes
+- Place layouts in appropriate directories following Next.js nested layout pattern
+- Keep route segments minimal and semantic
+- Use loading.tsx, error.tsx, and not-found.tsx appropriately
+
+### Core Directories
+- `app/` - All routes and app-specific components
+- `components/` - Reusable UI components
+- `lib/` - Utility functions and shared logic
+- `styles/` - Global styles and CSS modules
+- `public/` - Static assets
+- `types/` - TypeScript type definitions
+
+## Coding Standards
+
+### TypeScript Usage
+- Use TypeScript for all new files
+- Maintain strict type checking
+- Avoid `any` type - use proper type definitions
+- Use interface for object types that will be extended
+- Use type for union types and simple object types
+
+### Component Structure
+- One component per file
+- Use named exports instead of default exports
+- Follow single responsibility principle
+- Keep components focused and composable
+- Extract complex logic into custom hooks
+
+### State Management
+- Use React Server Components by default
+- Add 'use client' only when necessary
+- Leverage Next.js server actions for mutations
+- Use React Context sparingly and only for truly global state
+
+## Performance Guidelines
+
+### Image Optimization
+- Use Next.js Image component for all images
+- Specify proper width and height attributes
+- Use appropriate loading strategies (eager/lazy)
+- Optimize images before adding to the project
+
+### Component Optimization
+- Implement proper code splitting
+- Use dynamic imports for large components
+- Memoize expensive computations
+- Avoid unnecessary re-renders
+
+## shadcn/ui Implementation
+
+### Component Usage
+- Use shadcn/ui components as base building blocks
+- Maintain consistent theming across components
+- Extend components using the provided APIs
+- Keep custom styling minimal and consistent
+
+### Theme Configuration
+- Use CSS variables for theming
+- Maintain dark mode compatibility
+- Follow shadcn/ui theming best practices
+- Keep color palette consistent
+
+## Framer Motion Usage
+
+### Animation Standards
+- Keep animations subtle and purposeful
+- Use consistent animation durations
+- Implement proper exit animations
+- Consider reduced motion preferences
+
+### Performance
+- Avoid animating expensive properties
+- Use `layoutId` for shared element transitions
+- Implement proper animation cleanup
+- Use `AnimatePresence` for exit animations
+
+## Code Quality
+
+### Testing
+- Write tests for critical user paths
+- Use React Testing Library for component tests
+- Implement proper mocking strategies
+- Maintain good test coverage
+
+### Error Handling
+- Implement proper error boundaries
+- Use structured error handling
+- Provide meaningful error messages
+- Log errors appropriately
+
+## Documentation
+
+### Code Documentation
+- Document complex logic
+- Add JSDoc comments for functions
+- Include prop documentation for components
+- Keep documentation up to date
+
+### Component Usage
+- Document component APIs
+- Include usage examples
+- Document prop types
+- Note any side effects or limitations 

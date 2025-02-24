@@ -1,0 +1,165 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+description: Styling, theming, and CSS implementation guidelines
+globs: **/*.{css,scss}, components/**/*.tsx, app/**/*.tsx
+
+## CSS Architecture
+
+### Global Styles
+- Use Tailwind CSS as the primary styling solution
+- Keep global styles minimal
+- Define custom CSS variables in `:root`
+- Follow mobile-first approach
+
+### Class Organization
+- Follow consistent class ordering:
+  1. Layout (display, position)
+  2. Box model (margin, padding)
+  3. Typography
+  4. Visual (colors, backgrounds)
+  5. Animation/misc
+- Use meaningful class names
+- Avoid deep nesting
+
+## Tailwind Usage
+
+### Best Practices
+- Use Tailwind's utility classes
+- Create custom utilities when needed
+- Follow consistent spacing scale
+- Use semantic color names
+
+### Custom Configuration
+- Extend theme in `tailwind.config.js`
+- Define custom colors in theme
+- Use CSS variables for dynamic values
+- Keep modifications documented
+
+## shadcn/ui Theming
+
+### Theme Structure
+- Follow shadcn/ui theming conventions
+- Use CSS variables for customization
+- Maintain dark mode support
+- Keep consistent color palette
+
+### Component Styling
+- Use `cn()` utility for class merging
+- Extend base component styles
+- Maintain consistent spacing
+- Follow accessibility guidelines
+
+## Animation Styling
+
+### Framer Motion
+- Define consistent animation durations
+- Use CSS transforms when possible
+- Implement proper exit animations
+- Consider reduced motion
+
+### CSS Animations
+- Use CSS animations for simple transitions
+- Keep animations subtle
+- Define reusable keyframes
+- Consider performance impact
+
+## Responsive Design
+
+### Breakpoints
+- Use Tailwind's breakpoint system
+- Follow mobile-first approach
+- Create consistent layouts
+- Test across devices
+
+### Layout Patterns
+- Use CSS Grid for page layouts
+- Flexbox for component layouts
+- Maintain proper spacing
+- Consider content flow
+
+## Color System
+
+### Color Palette
+- Define primary/secondary colors
+- Use semantic color names
+- Maintain proper contrast
+- Support dark mode
+
+### Usage Guidelines
+- Use colors consistently
+- Follow accessibility guidelines
+- Implement proper hover states
+- Consider color meaning
+
+## Typography
+
+### Font System
+- Use consistent font families
+- Define type scale
+- Maintain proper line heights
+- Consider readability
+
+### Text Styles
+- Create reusable text styles
+- Use proper heading hierarchy
+- Maintain consistent spacing
+- Consider responsive sizing
+
+## Icons
+
+### Implementation
+- Use consistent icon system
+- Maintain proper sizing
+- Support dark mode
+- Consider accessibility
+
+### Usage
+- Keep icons meaningful
+- Provide proper labels
+- Maintain consistent styling
+- Consider loading impact
+
+## Performance
+
+### CSS Optimization
+- Minimize CSS bundle size
+- Use efficient selectors
+- Avoid unnecessary styles
+- Consider critical CSS
+
+### Loading Strategies
+- Implement proper font loading
+- Optimize icon loading
+- Consider CSS splitting
+- Monitor performance impact
+
+## Accessibility
+
+### Color Contrast
+- Maintain WCAG compliance
+- Test color combinations
+- Provide sufficient contrast
+- Support high contrast mode
+
+### Focus States
+- Implement proper focus styles
+- Maintain keyboard navigation
+- Consider focus order
+- Test accessibility features
+
+## Documentation
+
+### Style Guide
+- Document color system
+- Document typography
+- Document spacing system
+- Keep examples updated
+
+### Component Styles
+- Document custom styles
+- Provide usage examples
+- Note style variations
+- Document theme options 
